@@ -4,3 +4,7 @@ Tasks:
  - Write code
  - Create Presentation
 
+Think about different scales of input:
+ - one input -> two -> four, etc...
+ - increasing time scale
+ - wavelets for locality in time and space (space ~ different kinds of observations (FDOM, temperature, etc.))

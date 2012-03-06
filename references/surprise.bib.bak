@@ -58,7 +58,7 @@
 	saccadic gaze shifts). The resulting system allows more sophisticated
 	and time-consuming image analysis to be efficiently focused onto
 	the most surprising subsets of the incoming data.},
-  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Itti_Baldi05cvpr.pdf:PDF},
+  file = {C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Itti_Baldi05cvpr.pdf:PDF},
   if = {2005 acceptance rate: 28\%},
   owner = {wrbrooks},
   review = {full/conf},
