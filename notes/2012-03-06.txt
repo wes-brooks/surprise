@@ -1,0 +1,6 @@
+Tasks:
+ - Literature review
+ - Define problem (make sure to define a problem that you can solve)
+ - Write code
+ - Create Presentation
+
