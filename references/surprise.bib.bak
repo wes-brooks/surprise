@@ -1,6 +1,186 @@
 % This file was created with JabRef 2.6.
 % Encoding: Cp1252
 
+@ARTICLE{Baldi2010,
+  author = {Pierre Baldi and Laurent Itti},
+  title = {Of bits and wows: A Bayesian theory of surprise with applications
+	to attention},
+  journal = {Neural Networks},
+  year = {2010},
+  volume = {23},
+  pages = {649 - 666},
+  number = {5},
+  abstract = {The amount of information contained in a piece of data can be measured
+	by the effect this data has on its observer. Fundamentally, this
+	effect is to transform the observer's prior beliefs into posterior
+	beliefs, according to Bayes theorem. Thus the amount of information
+	can be measured in a natural way by the distance (relative entropy)
+	between the prior and posterior distributions of the observer over
+	the available space of hypotheses. This facet of information, termed
+	surprise, is important in dynamic situations where beliefs change,
+	in particular during learning and adaptation. Surprise can often
+	be computed analytically, for instance in the case of distributions
+	from the exponential family, or it can be numerically approximated.
+	During sequential Bayesian learning, surprise decreases as the inverse
+	of the number of training examples. Theoretical properties of surprise
+	are discussed, in particular how it differs and complements Shannon's
+	definition of information. A computer vision neural network architecture
+	is then presented capable of computing surprise over images and video
+	stimuli. Hypothesizing that surprising data ought to attract natural
+	or artificial attention systems, the output of this architecture
+	is used in a psychophysical experiment to analyze human eye movements
+	in the presence of natural video stimuli. Surprise is found to yield
+	robust performance at predicting human gaze (ROC-like ordinal dominance
+	score ~0.7 compared to ~0.8 for human inter-observer repeatability,
+	~0.6 for simpler intensity contrast-based predictor, and 0.5 for
+	chance). The resulting theory of surprise is applicable across different
+	spatio-temporal scales, modalities, and levels of abstraction.},
+  doi = {10.1016/j.neunet.2009.12.007},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Itti2010.pdf:PDF},
+  issn = {0893-6080},
+  keywords = {Information},
+  owner = {wrbrooks},
+  timestamp = {2012.03.08},
+  url = {http://www.sciencedirect.com/science/article/pii/S0893608009003256}
+}
+
+@ARTICLE{1977,
+  author = {Beran, Rudolf},
+  title = {Minimum Hellinger Distance Estimates for Parametric Models},
+  journal = {The Annals of Statistics},
+  year = {1977},
+  volume = {5},
+  pages = {pp. 445-463},
+  number = {3},
+  abstract = {This paper defines and studies for independent identically distributed
+	observations a new parametric estimation procedure which is asymptotically
+	efficient under a specified regular parametric family of densities
+	and is minimax robust in a small Hellinger metric neighborhood of
+	the given family. Associated with the estimator is a goodness-of-fit
+	statistic which assesses the adequacy of the chosen parametric model.
+	The fitting of a normal location-scale model by the new procedure
+	is exhibited numerically on clear and on contaminated data.},
+  copyright = {Copyright © 1977 Institute of Mathematical Statistics},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Beran1977.pdf:PDF},
+  issn = {00905364},
+  jstor_articletype = {research-article},
+  jstor_formatteddate = {May, 1977},
+  language = {English},
+  publisher = {Institute of Mathematical Statistics},
+  url = {http://www.jstor.org/stable/2958896}
+}
+
+@BOOK{degroot2005optimal,
+  title = {Optimal Statistical Decisions},
+  publisher = {John Wiley \& Sons},
+  year = {2005},
+  author = {DeGroot, M.H.},
+  series = {Wiley Classics Library},
+  isbn = {9780471726142},
+  url = {http://books.google.com/books?id=qa5v3tRi7KMC}
+}
+
+@ARTICLE{doi:10.1080/03610929708831972,
+  author = {Evans, Michael},
+  title = {Bayesian ikference procedures derived via the concept of relative
+	surprise},
+  journal = {Communications in Statistics - Theory and Methods},
+  year = {1997},
+  volume = {26},
+  pages = {1125-1143},
+  number = {5},
+  abstract = { We consider the problem of deriving Bayesian inference procedures
+	via the concept of relative surprise. The mathematical concept of
+	surprise has been developed by I.J. Good in a long sequence of papers.
+	We make a modification to this development that permits the avoidance
+	of a serious defect; namely, the change of variable problem. We apply
+	relative surprise to the development of estimation, hypothesis testing
+	and model checking procedures. Important advantages of the relative
+	surprise approach to inference include the lack of dependence on
+	a particular loss function and complete freedom to the statistician
+	in the choice of prior for hypothesis testing problems. Links are
+	established with common Bayesian inference procedures such as highest
+	posterior density regions, modal estimates and Bayes factors. From
+	a practical perspective new inference procedures arise that possess
+	good properties. },
+  doi = {10.1080/03610929708831972},
+  eprint = {http://www.tandfonline.com/doi/pdf/10.1080/03610929708831972},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Evans1997.pdf:PDF},
+  url = {http://www.tandfonline.com/doi/abs/10.1080/03610929708831972}
+}
+
+@ARTICLE{CJS:CJS5550340109,
+  author = {Evans, Michael J. and Guttman, Irwin and Swartz, Tim},
+  title = {Optimally and computations for relative surprise inferences},
+  journal = {Canadian Journal of Statistics},
+  year = {2006},
+  volume = {34},
+  pages = {113--129},
+  number = {1},
+  abstract = {Relative surprise inferences are based on how beliefs change from
+	a priori to a posteriori. As they are based on the posterior distribution
+	of the integrated likelihood, inferences of this type are invariant
+	under relabellings of the parameter of interest. The authors demonstrate
+	that these inferences possess a certain optimality property. Further,
+	they develop computational techniques for implementing them, provided
+	that algorithms are available to sample from the prior and posterior
+	distributions.},
+  doi = {10.1002/cjs.5550340109},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\EvansGuttmanSwartz2006.pdf:PDF},
+  issn = {1708-945X},
+  keywords = {Bayesian inference, computation, minimum prior content, relative surprise},
+  publisher = {Wiley-Blackwell},
+  url = {http://dx.doi.org/10.1002/cjs.5550340109}
+}
+
+@BOOKLET{Fink1997,
+  title = {A Compendium of Conjugate Priors},
+  author = {Daniel Fink},
+  address = {Environmental Statistics Group; Department of Biology; Montana State
+	Univeristy; Bozeman, MT 59717},
+  month = {May},
+  year = {1997},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\CompendiumOfConjugatePriors.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.08}
+}
+
+@ARTICLE{Itti2009,
+  author = {Laurent Itti and Pierre Baldi},
+  title = {Bayesian surprise attracts human attention},
+  journal = {Vision Research},
+  year = {2009},
+  volume = {49},
+  pages = {1295 - 1306},
+  number = {10},
+  note = {<ce:title>Visual Attention: Psychophysics, electrophysiology and
+	neuroimaging</ce:title>},
+  __markedentry = {[wrbrooks]},
+  abstract = {We propose a formal Bayesian definition of surprise to capture subjective
+	aspects of sensory information. Surprise measures how data affects
+	an observer, in terms of differences between posterior and prior
+	beliefs about the world. Only data observations which substantially
+	affect the observerâ€™s beliefs yield surprise, irrespectively of
+	how rare or informative in Shannonâ€™s sense these observations are.
+	We test the framework by quantifying the extent to which humans may
+	orient attention and gaze towards surprising events or items while
+	watching television. To this end, we implement a simple computational
+	model where a low-level, sensory form of surprise is computed by
+	simple simulated early visual neurons. Bayesian surprise is a strong
+	attractor of human attention, with 72% of all gaze shifts directed
+	towards locations more surprising than the average, a figure rising
+	to 84% when focusing the analysis onto regions simultaneously selected
+	by all observers. The proposed theory of surprise is applicable across
+	different spatio-temporal scales, modalities, and levels of abstraction.},
+  doi = {10.1016/j.visres.2008.09.007},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\IttiBaldi2009.pdf:PDF},
+  issn = {0042-6989},
+  keywords = {Attention},
+  owner = {wrbrooks},
+  timestamp = {2012.03.08},
+  url = {http://www.sciencedirect.com/science/article/pii/S0042698908004380}
+}
+
 @INPROCEEDINGS{Itti2006,
   author = {L. Itti and P. F. Baldi},
   title = {Bayesian Surprise Attracts Human Attention},
@@ -9,7 +189,6 @@
   pages = {547-554},
   address = {Cambridge, MA},
   publisher = {MIT Press},
-  __markedentry = {[wrbrooks]},
   abstract = {The concept of surprise is central to sensory processing, adaptation,
 	learning, and attention. Yet, no widely-accepted mathematical theory
 	currently exists to quantitatively characterize surprise elicited
@@ -58,11 +237,68 @@
 	saccadic gaze shifts). The resulting system allows more sophisticated
 	and time-consuming image analysis to be efficiently focused onto
 	the most surprising subsets of the incoming data.},
-  file = {C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Itti_Baldi05cvpr.pdf:PDF},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Itti_Baldi05cvpr.pdf:PDF},
   if = {2005 acceptance rate: 28\%},
   owner = {wrbrooks},
   review = {full/conf},
   timestamp = {2012.03.06},
   type = {bu ; cv ; eye ; su}
+}
+
+@ARTICLE{1987,
+  author = {Simpson, Douglas G.},
+  title = {Minimum Hellinger Distance Estimation for the Analysis of Count Data},
+  journal = {Journal of the American Statistical Association},
+  year = {1987},
+  volume = {82},
+  pages = {pp. 802-807},
+  number = {399},
+  abstract = {Minimum Hellinger distance (MHD) estimation is studied in the context
+	of discrete data. The MHD estimator is shown to provide an effective
+	treatment of anomalous data points, and its properties are illustrated
+	using short-term mutagenicity test data. Asymptotic normality for
+	a discrete distribution with countable support is derived under a
+	readily verified condition on the model. Breakdown properties of
+	the MHD estimator and an outlier screen are compared. Count data
+	occur frequently in statistical applications. For instance, in chemical
+	mutagenicity studies, which comprise an important step in the identification
+	of environmental carcinogens, much of the resultant data are counts.
+	Woodruff, Mason, Valencia, and Zimmering (1984) reported anamalous
+	counts in the sex-linked recessive lethal test in drosophila. These
+	outliers can have a substantial impact on the experimental conclusions.
+	MHD estimation provides a means for reliable inference when modeling
+	count data that are prone to outliers. The MHD fit gives little weight
+	to counts that are improbable relative to the model. On the other
+	hand, the MHD estimator is asymptotically equivalent to the maximum
+	likelihood estimator when the model is correct. This latter result,
+	long known for a parametric multinomial model with finite support,
+	is extended here to models with countable support. The breakdown
+	point provides a quantification of outlier resistence. Roughly, it
+	is the smallest proportion of outliers in the data that can cause
+	an arbitrarily large shift in the estimate (Donoho and Huber 1983).
+	Here the MHD estimator is shown to have an asymptotic breakdown point
+	of 1/2 at the model.},
+  copyright = {Copyright © 1987 American Statistical Association},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Simpson1987.pdf:PDF},
+  issn = {01621459},
+  jstor_articletype = {research-article},
+  jstor_formatteddate = {Sep., 1987},
+  language = {English},
+  publisher = {American Statistical Association},
+  url = {http://www.jstor.org/stable/2288789}
+}
+
+@INPROCEEDINGS{Bernardo2006,
+  author = {Dongchu Sun and James O. Berger},
+  title = {Objective Priors for the Multivariate Normal Model},
+  booktitle = {Proc. Valencia / ISBA 8th World Meeting on Bayesian Statistics},
+  year = {2006},
+  editor = {José M. Bernardo},
+  volume = {8},
+  month = {June},
+  organization = {Valencia International Meetings on Bayesian Statistics},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\SunBergerV8.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.08}
 }
 
