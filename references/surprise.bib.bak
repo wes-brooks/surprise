@@ -145,6 +145,25 @@
   timestamp = {2012.03.08}
 }
 
+@TECHREPORT{Geiger1995,
+  author = {Dan Geiger and David Heckerman},
+  title = {A characterization of the bivariate normal-Wishart distribution},
+  institution = {Microsoft Research
+	
+	Advanced Technology Division},
+  year = {1995},
+  number = {MSR-TR-95-53},
+  address = {Microsoft Coproration
+	
+	One Microsoft Way
+	
+	Redmond, WA 98052},
+  month = {November},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\GeigerHeckerman1995.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.22}
+}
+
 @ARTICLE{Itti2009,
   author = {Laurent Itti and Pierre Baldi},
   title = {Bayesian surprise attracts human attention},
@@ -245,6 +264,35 @@
   type = {bu ; cv ; eye ; su}
 }
 
+@ARTICLE{Ji2006,
+  author = {Shihao Ji and Balaji Krishnipuam and Lawrence Carin},
+  title = {Variational Bayes for continuous hidden Markov models and its application
+	to active learning},
+  journal = {IEEE Trans. Pattern Analysis and Machine Intelligence},
+  year = {2006},
+  volume = {28},
+  pages = {522-532},
+  number = {4},
+  month = {April},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\JiKrishnipuramCarin2006.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.22}
+}
+
+@ARTICLE{Penny2002,
+  author = {W.D. Penny and S.J. Roberts},
+  title = {Bayesian multivariate autoregressive models with structured priors},
+  journal = {IEE Proc-Vis. Image Signal Process},
+  year = {2002},
+  volume = {149},
+  pages = {33-41},
+  number = {1},
+  month = {February},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\PennyRoberts2002.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.22}
+}
+
 @ARTICLE{1987,
   author = {Simpson, Douglas G.},
   title = {Minimum Hellinger Distance Estimation for the Analysis of Count Data},
@@ -300,5 +348,34 @@
   file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\SunBergerV8.pdf:PDF},
   owner = {wrbrooks},
   timestamp = {2012.03.08}
+}
+
+@ARTICLE{Tierney1986,
+  author = {Luke Tierney and Joseph B. Kadane},
+  title = {Accurate approximations for posterior moments and marginal densities},
+  journal = {Journal of the American Statistical Association},
+  year = {1986},
+  volume = {81},
+  pages = {82-86},
+  number = {393},
+  month = {March},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\TierneyKadane1986.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.22}
+}
+
+@ARTICLE{Tierney1989,
+  author = {Luke Tierney and Robert E. Kass and Joseph B. Kadane},
+  title = {Fully exponential Laplace approximations to expectations and variances
+	of nonpositive functions},
+  journal = {Journal of the American Statistical Association},
+  year = {1989},
+  volume = {84},
+  pages = {710-716},
+  number = {407},
+  month = {September},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\TierneyKassKadane1989.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.22}
 }
 
