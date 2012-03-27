@@ -1,0 +1,22 @@
+Title:
+Documentation for timeseries module
+
+Author:
+Wesley Brooks
+USGS Wisconsin Water Science Center
+608-821-3827
+brooks.wesley@gmail.com
+wrbrooks@usgs.gov
+
+Overview:
+The timeseries module is a tool for time series analysis. Using this module, you can import a time series from a file, break it into contiguous sections, and do some basic autoregressive modeling.
+
+Classes:
+Series:
+An object of the Series class is a time series. Series holds the data, timestamps, and headers, and provides the methods to do data processing.
+
+Wrapper:
+This class wraps several Series objects into one. Generally, the wrapper will hold all the data from a single file. Its methods will split the series into continuous sub-series and smooth over small gaps within those sub-series.
+
+Model:
+A regression model using least squares to estimate the model parameters.
