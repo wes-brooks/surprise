@@ -80,6 +80,18 @@
   url = {http://books.google.com/books?id=qa5v3tRi7KMC}
 }
 
+@ARTICLE{Deng2009,
+  author = {Xinwei Deng and Ming Yuan},
+  title = {Large Gaussian covariance matrix estimation with Markov structure},
+  journal = {Journal of Computational and Graphical Statistics},
+  year = {2009},
+  volume = {18},
+  pages = {640-657},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\scov.final.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.29}
+}
+
 @ARTICLE{doi:10.1080/03610929708831972,
   author = {Evans, Michael},
   title = {Bayesian ikference procedures derived via the concept of relative
@@ -377,5 +389,18 @@
   file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\TierneyKassKadane1989.pdf:PDF},
   owner = {wrbrooks},
   timestamp = {2012.03.22}
+}
+
+@ARTICLE{Yuan2010,
+  author = {Ming Yuan},
+  title = {High dimensional inverse covariance matrix estimation via linear
+	programming},
+  journal = {Journal of Machine Learning Research},
+  year = {2010},
+  volume = {11},
+  pages = {2261-2286},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\icovest.final.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.03.29}
 }
 
