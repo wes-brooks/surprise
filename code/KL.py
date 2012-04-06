@@ -2,7 +2,7 @@ import numpy as np
 from numpy import trace as tr
 from numpy import log, pi
 from numpy.linalg import inv, det
-from scipy.special import psi, gamma
+from scipy.special import psi, gamma, gammaln, digamma
 
 
 def Z(alpha, tau):
@@ -22,4 +22,8 @@ def Wishart(old, new):
 def NormalWishart(old, new):
     d = old['tau'].shape[1]
     return Wishart(old, new) + 0.5 * (d * log(old['t'] / new['t']) + d * new['t'] / old['t'] - d + new['t'] * (old['m']-new['m']).T * old['alpha'] * inv(old['tau']) * (old['m']-new['m']))
+    
+    
+def Gamma(old, new):
+    return old['alpha'] * log(old['beta']/new['beta']) + gammaln(new['alpha']) - gammaln(old['alpha']) + new['beta']*old['alpha']/old['beta'] + (old['alpha']-new['alpha']) * digamma(old['alpha'])
     

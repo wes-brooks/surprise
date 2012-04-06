@@ -176,6 +176,19 @@
   timestamp = {2012.03.22}
 }
 
+@ARTICLE{Holman2011,
+  author = {Ian Paul Holman and Monica Rivas-Casado and John P. Bloom?eld and
+	Jason J. Gurdak},
+  title = {Identifying non-stationary groundwater level response to North Atlantic
+	ocean-atmosphere teleconnection patterns using wavelet coherence},
+  journal = {Hydrogeology Journal},
+  year = {2011},
+  volume = {19},
+  pages = {1269-1278},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Holman_et_al_HJ_2011_wavelets_gw.pdf:PDF},
+  owner = {wrbrooks}
+}
+
 @ARTICLE{Itti2009,
   author = {Laurent Itti and Pierre Baldi},
   title = {Bayesian surprise attracts human attention},
@@ -289,6 +302,21 @@
   file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\JiKrishnipuramCarin2006.pdf:PDF},
   owner = {wrbrooks},
   timestamp = {2012.03.22}
+}
+
+@ARTICLE{Langman2010,
+  author = {Owen Langman and Paul Hanson and Stephen Carpenter and Yu Hen Hu},
+  title = {Control of dissolved oxygen in northern temperate lakes over scales
+	ranging from minutes to days},
+  journal = {Aquatic Biology},
+  year = {2010},
+  volume = {9},
+  pages = {193-202},
+  month = {May},
+  doi = {10.3354/ab00249},
+  file = {:C\:\\Users\\wrbrooks\\git\\surprise\\references\\pdfs\\Langman et al 2010.pdf:PDF},
+  owner = {wrbrooks},
+  timestamp = {2012.04.05}
 }
 
 @ARTICLE{Penny2002,
