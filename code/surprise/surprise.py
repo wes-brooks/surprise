@@ -11,6 +11,7 @@ class SurpriseDistribution(object):
         self.surprise = list()
         self.parameter_history = list()
         self.surprise_history = list()
+        self.data_history = list()
         
     def _UpdateParameters(self, **kwargs):
         raise NotImplementedError
@@ -24,6 +25,9 @@ class SurpriseDistribution(object):
     def ArchiveSurprise(self, surprise):
         self.surprise_history.append(surprise)
         
+    def ArchiveData(self, data):
+        self.data_history.append(data)
+        
     def Update(self, data):
         #Save the old parameters and generate the new ones:
         old = copy.copy(self.parameters)
@@ -33,6 +37,7 @@ class SurpriseDistribution(object):
         self.surprise = surprise = self.Surprise(old, self.parameters)
         self.ArchiveParameters(self.parameters)
         self.ArchiveSurprise(surprise)
+        self.ArchiveData(data)
     
     def Surprise(self, old, new):
         surprise = self._SurpriseCalculation(old, new)
