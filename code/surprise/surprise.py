@@ -28,10 +28,10 @@ class SurpriseDistribution(object):
     def ArchiveData(self, data):
         self.data_history.append(data)
         
-    def Update(self, data):
+    def Update(self, data, **kwargs):
         #Save the old parameters and generate the new ones:
         old = copy.copy(self.parameters)
-        self.parameters = self._UpdateParams(data)
+        self.parameters = self._UpdateParams(data, **kwargs)
     
         #Calculate the surprise in the new data and archive it along with the latest parameters.
         self.surprise = surprise = self.Surprise(old, self.parameters)
