@@ -2,7 +2,7 @@ import numpy as np
 from numpy import trace as tr
 from numpy import log, pi
 from numpy.linalg import inv, det
-from scipy.special import psi, gamma, gammaln, digamma
+from scipy.special import psi, gammaln, digamma, gamma as gammafn
 import copy
 
 
@@ -26,7 +26,7 @@ class SurpriseDistribution(object):
         self.surprise_history.append(surprise)
         
     def ArchiveData(self, data):
-        self.data_history.append(data)
+        self.data_history.extend(data)
         
     def Update(self, data, **kwargs):
         #Save the old parameters and generate the new ones:
