@@ -7,7 +7,7 @@ gn = gammanormal3.GammaNormal()
 a = 1.
 b = 0.9
 m = 10.
-n = 300.
+n = 400.
 
 rgamma = gamma(shape=a, scale=1./b, size=n)
 rnorm = normal(loc=m, scale=1/rgamma**0.5)
@@ -16,7 +16,7 @@ dd = normal(loc=rnorm, scale=1/rgamma**0.5)
 [gn.Update(d) for d in dd]
 
 
-a = 7.
+a = 3.
 b = 0.9
 m = 10.
 n = 300.

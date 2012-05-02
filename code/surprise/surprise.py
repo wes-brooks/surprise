@@ -26,7 +26,7 @@ class SurpriseDistribution(object):
         self.surprise_history.append(surprise)
         
     def ArchiveData(self, data):
-        self.data_history.extend(data)
+        self.data_history.append(data)
         
     def Update(self, data, **kwargs):
         #Save the old parameters and generate the new ones:
