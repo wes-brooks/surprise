@@ -1,7 +1,9 @@
 \beamer@endinputifotherversion {3.07pt}
 \beamer@sectionintoc {1}{Overview}{3}{0}{1}
-\beamer@sectionintoc {2}{Background}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Bayesian statistics}{6}{0}{2}
-\beamer@sectionintoc {3}{Current work}{8}{0}{3}
-\beamer@sectionintoc {4}{Value of the work}{10}{0}{4}
-\beamer@sectionintoc {5}{Future work}{11}{0}{5}
+\beamer@sectionintoc {2}{Methodological Background}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Surprise theory}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Bayesian statistics}{14}{0}{2}
+\beamer@sectionintoc {3}{Examples}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Simulations}{23}{0}{3}
+\beamer@subsectionintoc {3}{2}{Field data}{26}{0}{3}
+\beamer@sectionintoc {4}{Future directions}{29}{0}{4}

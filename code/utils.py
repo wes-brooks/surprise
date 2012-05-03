@@ -7,8 +7,8 @@ from numpy import where, nonzero
 from dateutil import parser, relativedelta
 from datetime import datetime
 
-import RDotNetWrapper as rdn
-from System import Array
+#import RDotNetWrapper as rdn
+#from System import Array
 
 
 def MakeConverters(headers):
@@ -25,69 +25,6 @@ def Converter(value):
     try: return float(value or 'nan')
     except ValueError: return np.nan
 
-
-def DotnetToArray(data):
-    '''Copy the contents of a .NET DataView into a numpy array with a list of headers'''
-    
-    #First import the libraries that are needed just for this step:
-    import System
-    import System.Data
-    import DotNetExtensions
-
-    #Determine whether we got a DataTable or a DataView
-    if isinstance(data, System.Data.DataTable): data_view = data.AsDataView()
-    elif isinstance(data, System.Data.DataView): data_view = data
-    else: return "data was passed to Python in an invalid type"
-    
-    #Extract the column headers:
-    headers = [column.Caption for column in data_view.Table.Columns]
-    
-    #Find which rows of the DataView contain NaNs:
-    nan_rows = [ sum( [isinstance(item, System.DBNull) for item in row] ) for row in data_view ]
-    flags = np.ones(len(data_view), dtype=bool)
-    flags[ np.nonzero(nan_rows) ] = False
-    
-    #Now copy the NaN-free rows of the DataView into an array:
-    raw_table = [ list(row) for row in data_view ]
-    data_array = np.array( raw_table )[flags]
-    data_array = np.array(data_array, dtype=float)
-
-    return [headers, data_array]
-
-
-def DictionaryToR(data_dictionary, name=''):
-    '''Moves a python dictionary into an R data frame'''
-    
-    #link to R:
-    r = rdn.r
-    
-    #set up variables we'll need later
-    df = dict()
-    cols = dict()
-    command = "data.frame("
-    
-    #each column of the dictionary should be a numpy array
-    for col in data_dictionary:
-        if data_dictionary[col].dtype in [int, float]:
-            df[col] = r.CreateNumericVector( Array[float](data_dictionary[col]) ).AsVector()
-        else:
-            df[col] = r.CreateCharacterVector( Array[str](data_dictionary[col]) ).AsVector()
-        
-        #Update the command and give the column a random name in R
-        r_col_name = col.replace("[", ".").replace("]", ".").replace("(", ".").replace(")", ".").replace(",", ".").replace(" ", ".")
-        col_name = "col_" + str(random.random())[2:-4]
-        command = command + r_col_name + "=" + col_name + ","
-        r.SetSymbol(col_name, df[col])
-        
-    #create the data frame in R
-    command = command[:-1] + ")"
-    data_frame = r.EagerEvaluate(command).AsDataFrame()
-
-    #if a name was supplied, then assign it to the R data.frame object:
-    if name: r.SetSymbol(name, data_frame)
-
-    return data_frame
- 
  
 def Draw(count, max):
     '''draw random numbers without replacement'''

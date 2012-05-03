@@ -13,7 +13,7 @@ default_parameters = {'a':1, 'b':1, 'm':1}
 class GammaNormal(surprise.SurpriseDistribution):
     def __init__(self):        
         super(GammaNormal, self).__init__()
-        self.window = 50
+        self.window = 96
         self.n = 0
         self.parameters = default_parameters
         self.sufficient = {'SS':0, 'ybar':0, 'n':0}
