@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009) (format=xelatex 2009.11.7)  3 MAY 2012 02:14
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009) (format=xelatex 2009.11.7)  3 MAY 2012 10:56
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -806,48 +806,43 @@ File: ../../figures/bucky.pdf Graphic file (type QTm)
 ] (./NWQMC.toc)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 49.
+(Font)              size <5> substituted on input line 53.
 
 [2
 
-] (./NWQMC.toc) [3
-
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
-
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+ (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [4
+) [3
 
-] [5
+] [4
 
 ]
-[6
+[5
 
-] [7
+] [6
 
-] [8
+] (./NWQMC.toc) [7
 
-] (./NWQMC.toc) [9
-
-] (./NWQMC.toc) [10
+] (./NWQMC.toc) [8
 
 ]
 File: ../../figures/surprise-ittibaldi.pdf Graphic file (type QTm)
 
-<use  "../../figures/surprise-ittibaldi.pdf" > [11
+<use  "../../figures/surprise-ittibaldi.pdf" > [9
 
-] [12
+] [10
 
-] [13
+] [11
 
 ] (./NWQMC.toc)
-[14
+[12
 
 ]
 File: ../../figures/normal_pdf.pdf Graphic file (type QTm)
@@ -857,84 +852,84 @@ File: ../../figures/gamma_pdf.pdf Graphic file (type QTm)
 <use  "../../figures/gamma_pdf.pdf" >
 File: ../../figures/t_pdf.pdf Graphic file (type QTm)
  <use  "../../figures/t_pdf.pdf" >
-[15
+[13
 
 ]
 File: ../../figures/hierarchical.pdf Graphic file (type QTm)
- <use  "../../figures/hierarchical.pdf" > [16
+ <use  "../../figures/hierarchical.pdf" > [14
 
 ]
 File: ../../figures/hierarchical.pdf Graphic file (type QTm)
 
-<use  "../../figures/hierarchical.pdf" > [17
+<use  "../../figures/hierarchical.pdf" > [15
 
 ]
 File: ../../figures/hierarchical-integrate.pdf Graphic file (type QTm)
 
-<use  "../../figures/hierarchical-integrate.pdf" > [18
+<use  "../../figures/hierarchical-integrate.pdf" > [16
 
 ]
 File: ../../figures/hierarchical-marginal.pdf Graphic file (type QTm)
 
-<use  "../../figures/hierarchical-marginal.pdf" > [19
+<use  "../../figures/hierarchical-marginal.pdf" > [17
 
 ]
 File: ../../figures/hierarchical-surprise.pdf Graphic file (type QTm)
 
-<use  "../../figures/hierarchical-surprise.pdf" > [20
+<use  "../../figures/hierarchical-surprise.pdf" > [18
 
 ]
 File: ../../figures/data-window.pdf Graphic file (type QTm)
 
-<use  "../../figures/data-window.pdf" > [21
+<use  "../../figures/data-window.pdf" > [19
 
-] (./NWQMC.toc) [22
+] (./NWQMC.toc) [20
 
 ] (./NWQMC.toc)
-[23
+[21
 
 ]
 File: ../../figures/mock1.pdf Graphic file (type QTm)
  <use  "../../figures/mock1.pdf" >
-Overfull \vbox (7.3184pt too high) detected at line 187
+Overfull \vbox (7.3184pt too high) detected at line 194
  []
 
-[24
+[22
 
 ]
 File: ../../figures/mock3.pdf Graphic file (type QTm)
  <use  "../../figures/mock3.pdf" >
-Overfull \vbox (7.3184pt too high) detected at line 193
+Overfull \vbox (7.3184pt too high) detected at line 200
  []
 
-[25
+[23
 
-] (./NWQMC.toc) [26
+] (./NWQMC.toc) [24
 
 ]
 File: ../../figures/pheasantbranch.pdf Graphic file (type QTm)
  <use  "../../figures/pheasantbranch.pdf" >
-Overfull \vbox (7.92673pt too high) detected at line 203
+Overfull \vbox (7.92673pt too high) detected at line 210
  []
 
-[27
+[25
 
 ]
 File: ../../figures/troutlake.pdf Graphic file (type QTm)
  <use  "../../figures/troutlake.pdf" >
-Overfull \vbox (7.92673pt too high) detected at line 209
+Overfull \vbox (7.92673pt too high) detected at line 216
  []
 
-[28
+[26
 
-] (./NWQMC.toc) [29
+] (./NWQMC.toc) [27
 
 ]
 File: ../../figures/hierarchical-regression.pdf Graphic file (type QTm)
  <use  "../../figures/hierarchical-regression.pdf" >
-[30
+[28
 
-] [31
+] [29
 
 ]
 \tf@nav=\write5
@@ -953,12 +948,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 12507 strings out of 494665
- 228451 string characters out of 3163743
- 297809 words of memory out of 3000000
- 15368 multiletter control sequences out of 15000+200000
- 10589 words of font info for 40 fonts, out of 3000000 for 9000
+ 12530 strings out of 494665
+ 229337 string characters out of 3163743
+ 297790 words of memory out of 3000000
+ 15392 multiletter control sequences out of 15000+200000
+ 10895 words of font info for 41 fonts, out of 3000000 for 9000
  669 hyphenation exceptions out of 8191
  45i,15n,65p,356b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on NWQMC.pdf (31 pages).
+Output written on NWQMC.pdf (29 pages).

@@ -7,7 +7,7 @@
 \AtBeginSection[]
 {
   \begin{frame}
-    \frametitle{Table of Contents}
+    \frametitle{Outline}
     \tableofcontents[currentsection]
   \end{frame}
 }
@@ -15,7 +15,7 @@
 \AtBeginSubsection[]
 {
   \begin{frame}
-    \frametitle{Table of Contents}
+    \frametitle{Outline}
     \tableofcontents[currentsubsection]
   \end{frame}
 }
@@ -44,9 +44,10 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{Table of Contents}
-\tableofcontents
-\end{frame}
+
+%\begin{frame}{Outline}
+%\tableofcontents
+%\end{frame}
 
 
 \section{Overview}
@@ -55,14 +56,14 @@
 
 \begin{frame}{Intro}
 	\begin{itemize}
-		\item \visible<1->{Real-time monitoring: big data}
-		\item \visible<2->{Lots of new instruments are going in}
+		\item Real-time monitoring: big data
+		\item Lots of new instruments are going in
 		\begin{itemize}
-			\item \visible<2->{That hardware needs to be maintained}
+			\item That hardware needs to be maintained
 		\end{itemize}
-		\item \visible<3->{Each instrument is producing more data}
+		\item Each instrument is producing more data
 		\begin{itemize}
-			\item \visible<3->{Let's use that data to tell us when there's been a change that needs attention}
+			\item \visible<2->{Let's use that data to tell us when there's been a change that needs attention}
 		\end{itemize}		
 	\end{itemize}
 \end{frame}
@@ -72,10 +73,13 @@
 	\begin{itemize}
 		\item Automated
 		\item Data-driven
-		\item Detects unusual events in real-time data.
-		\item \visible<2->{Basic idea: learn a model for the historical data and compare it to the newest incoming data.}
+		\item Using lightweight computations
+		\item Detects unusual data
+		\item Does it all in real-time
+		\item \visible<2->{Basic idea: learn the distribution of historical data and compare it to the newest incoming data.}
 	\end{itemize}
 \end{frame}
+
 
 
 \section{Methodological Background}
@@ -118,7 +122,10 @@
 		\begin{itemize}
 			\item Ad-hoc ``memory" parameter must be tuned manually
 			\item Cannot track mean and variance simultaneously
-			\item Technically only applicable to discrete data (e.g. counts)
+			\item Surprise machines were individually tuned to detect specific errors
+			\begin{itemize}
+				\item Proof of concept
+			\end{itemize}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -213,14 +220,19 @@
 %So, so many.
 
 \begin{frame}{Future directions}
-	Add dependence on other variables (regression):\\
-	\includegraphics[width=\textwidth]{../../figures/hierarchical-regression}
+	Add dependence on other variables:
+	\begin{itemize}
+		\item Regression on other variables
+		\item Autoregression
+		\item Spatial dependence
+	\end{itemize}
+	\includegraphics[width=0.9\textwidth]{../../figures/hierarchical-regression}
 \end{frame}
 
 
 \begin{frame}{Conclusion}
 	\begin{itemize}
-		\item Surprise is a data-driven tool that can help to quickly detect problems with real-time sensors and therefore improve the up-time of a monitoring effort.
+		\item Surprise is a data-driven tool that can help to quickly detect problems with real-time sensors and therefore improve the up-time of a monitoring network.
 	\end{itemize}
 \end{frame}
 
