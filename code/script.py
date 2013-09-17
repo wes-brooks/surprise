@@ -4,24 +4,20 @@ from numpy.random import poisson, gamma, normal
 
 
 gp = gammapoisson.GammaPoisson()
-gp.memory = 0.96
+gp.memory = 0.9
 
-a = 50.
-b = 5.
-n = 100.
+l = 100
+n = 500.
 
-rgamma = gamma(shape=a, scale=1./b, size=n)
-rpois = poisson(lam=rgamma)
+rpois = poisson(lam=l, size=n)
 
 [gp.Update(l) for l in rpois]
 
 
-a = 25.
-b = 5.
-n = 100.
+l = 50
+n = 500.
 
-rgamma = gamma(shape=a, scale=1./b, size=n)
-rpois = poisson(lam=rgamma)
+rpois = poisson(lam=l, size=n)
 
 [gp.Update(l) for l in rpois]
 
