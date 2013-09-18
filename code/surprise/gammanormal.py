@@ -5,9 +5,10 @@ from numpy.linalg import inv, det
 from scipy.special import psi, gamma, gammaln, digamma
 import copy
 import surprise
+from surprise.base import SurpriseDistribution
 
 
-class Gamma(surprise.SurpriseDistribution):
+class Gamma(SurpriseDistribution):
     def __init__(self):        
         super(Gamma, self).__init__()
         self.memory = 1
@@ -37,7 +38,7 @@ class Gamma(surprise.SurpriseDistribution):
         return self.parameters['alpha'] / self.parameters['beta']
         
         
-class Normal(surprise.SurpriseDistribution):
+class Normal(SurpriseDistribution):
     def __init__(self):        
         super(Normal, self).__init__()
         self.memory = 1
@@ -68,7 +69,7 @@ class Normal(surprise.SurpriseDistribution):
         
         
         
-class GammaNormal(surprise.SurpriseDistribution):
+class GammaNormal(SurpriseDistribution):
     def __init__(self):        
         super(GammaNormal, self).__init__()
         self.memory = 1

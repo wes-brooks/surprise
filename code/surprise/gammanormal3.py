@@ -7,10 +7,11 @@ import copy
 
 import misc
 import surprise
+from surprise.base import SurpriseDistribution
        
 default_parameters = {'a':1, 'b':1, 'm':1}
         
-class GammaNormal(surprise.SurpriseDistribution):
+class GammaNormal(SurpriseDistribution):
     def __init__(self):        
         super(GammaNormal, self).__init__()
         self.window = 96

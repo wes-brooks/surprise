@@ -7,9 +7,6 @@ from numpy import where, nonzero
 from dateutil import parser, relativedelta
 from datetime import datetime
 
-#import RDotNetWrapper as rdn
-#from System import Array
-
 
 def MakeConverters(headers):
     '''Numpy's loadtxt uses 'converters' to cast data to floats.
