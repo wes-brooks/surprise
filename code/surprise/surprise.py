@@ -34,13 +34,13 @@ class SurpriseDistribution(object):
         self.parameters = self._UpdateParams(data, **kwargs)
     
         #Calculate the surprise in the new data and archive it along with the latest parameters.
-        self.surprise = surprise = self.Surprise(old, self.parameters)
+        self.surprise = surprise = self.Surprise(old, self.parameters, data=data)
         self.ArchiveParameters(self.parameters)
         self.ArchiveSurprise(surprise)
         self.ArchiveData(data)
     
-    def Surprise(self, old, new):
-        surprise = self._SurpriseCalculation(old, new)
+    def Surprise(self, old, new, **kwargs):
+        surprise = self._SurpriseCalculation(old, new, **kwargs)
         return surprise
         
     
