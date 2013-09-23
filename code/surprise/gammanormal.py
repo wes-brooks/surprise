@@ -4,13 +4,14 @@ from numpy import log, pi, sqrt, exp
 from numpy.linalg import inv, det
 from scipy.special import psi, gamma as gammafn, gammaln, digamma
 import copy
-
 import misc
+
 import surprise
-       
+from surprise.base import SurpriseDistribution
+
 default_parameters = {'a':1, 'b':1, 'm':1}
-        
-class GammaNormal(surprise.SurpriseDistribution):
+
+class Gamma(SurpriseDistribution):
     def __init__(self):        
         super(GammaNormal, self).__init__()
         self.window = 20
@@ -54,7 +55,26 @@ class GammaNormal(surprise.SurpriseDistribution):
         est['a'] = 2 + 3*cm2**2/(4*cm4)
         est['b'] = (est['a']-1) * (m2-m1**2) / 2
         
-        print est
+
+class Normal(SurpriseDistribution):
+    def __init__(self):        
+        super(Normal, self).__init__()
+        self.memory = 1
+        self.parameters = {'mu':1, 'tau':1}
+    
+    
+    def _UpdateParams(self, data, data_precision):        
+        #Calculate the updated gamma parameters and return them:
+        old = self.parameters
+        new = dict()
+        new['tau'] = self.memory * old['tau'] + data_precision
+        new['mu'] = (data*data_precision + self.memory*old['tau']*old['mu']) / (data_precision + self.memory*old['tau'])
+        return new
+
+
+    def _SurpriseCalculation(self, old, new):
+        t1 = old['tau']
+        m1 = old['mu']
         
         return est
         
@@ -70,6 +90,15 @@ class GammaNormal(surprise.SurpriseDistribution):
         a2 = new['a']
         b2 = new['b']
         m2 = new['m']
+
+		
+class GammaNormal(SurpriseDistribution):
+    def __init__(self):        
+        super(GammaNormal, self).__init__()
+        self.memory = 1
+        self.mean = Normal()
+        self.precision = Gamma()
+        self.parameters = {'mean':self.mean.Expectation(), 'precision':self.precision.Expectation()}
         
         A1 = 2*a1 + 1
         A2 = 2*a2 + 1

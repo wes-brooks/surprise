@@ -5,9 +5,10 @@ from numpy.linalg import inv, det
 from scipy.special import psi, gamma, gammaln, digamma
 import copy
 import surprise
+from surprise.base import SurpriseDistribution
 
 
-class GammaPoisson(surprise.SurpriseDistribution):
+class GammaPoisson(SurpriseDistribution):
     def __init__(self):        
         super(GammaPoisson, self).__init__()
         self.memory = 1
@@ -24,8 +25,8 @@ class GammaPoisson(surprise.SurpriseDistribution):
         
         
     def _SurpriseCalculation(self, old, new):
-        print new
-        print old
+        print(new)
+        print(old)
         a1 = old['alpha']
         b1 = old['beta']
         
